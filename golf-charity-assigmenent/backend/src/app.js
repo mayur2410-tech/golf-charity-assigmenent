@@ -29,7 +29,7 @@ app.use(morgan("dev"));
 // );
 
 app.get("/", (req, res) => {
-  res.status(200).json({ status: "backend in running" });
+  res.status(200).json({ status: "Backend in running" });
 });
 
 app.use("/api/subscriptions/webhook", express.raw({ type: "application/json" }));
