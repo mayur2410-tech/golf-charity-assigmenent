@@ -5,6 +5,22 @@ const morgan = require("morgan");
 const rateLimit = require("express-rate-limit");
 const path = require("path");
 
+
+//making changes for vercel
+const connectDB = require("./config/db");
+const env = require("./config/env");
+
+app.use(async (req, res, next) => {
+  try {
+    await connectDB(env.mongoUri);
+    next();
+  } catch (err) {
+    console.error("DB connection failed:", err);
+    res.status(500).json({ message: "Database connection error" });
+  }
+});
+
+
 const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
 const scoreRoutes = require("./routes/scoreRoutes");
