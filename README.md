@@ -26,7 +26,7 @@
 ### 🌐 **Frontend**
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](#)
 
-[View Live Site →](#)
+[View Live Site →](https://golf-charity-iota.vercel.app/)
 
 </td>
 <td align="center" width="25%">
@@ -34,7 +34,7 @@
 ### ⚙️ **Backend**
 [![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](#)
 
-[API Server →](https://golf-charity-backend-kappa.vercel.app/)
+[API Server →](https://golf-charity-assigmenent.onrender.com/)
 
 </td>
 <td align="center" width="25%">
