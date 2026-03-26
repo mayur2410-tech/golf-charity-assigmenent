@@ -41,7 +41,7 @@ const welcomeEmail = (name) => baseTemplate(`
   <p class="text">Welcome to the Golf Platform. Your account has been successfully provisioned and is ready for access.</p>
   <p class="text">Explore our premium tournaments, track your live scores, and see your direct charitable impact all from your command dashboard.</p>
   <div style="text-align: center; margin-top: 32px;">
-    <a href="https://golfplatform.com/login" class="btn">Access Dashboard</a>
+    <a href="https://golf-charity-frontend-eta.vercel.app/login" class="btn">Access Dashboard</a>
   </div>
 `, "Account Provisioned Successfully");
 
@@ -49,7 +49,7 @@ const subscriptionActivatedEmail = () => baseTemplate(`
   <p class="text">Your premium subscription has been <span style="color: #10b981; font-weight: 600;">Authorized and Activated</span>.</p>
   <p class="text">You have successfully unlocked unlimited draws, full algorithmic analytics, and priority placement in the upcoming prize pool.</p>
   <div style="text-align: center; margin-top: 32px;">
-    <a href="https://golfplatform.com/dashboard" class="btn">View Active Status</a>
+    <a href="https://golf-charity-frontend-eta.vercel.app/dashboard" class="btn">View Active Status</a>
   </div>
 `, "Subscription Activated");
 
@@ -63,7 +63,7 @@ const winnerAlertEmail = (name, month) => baseTemplate(`
   <p class="text">Congratulations. Our proprietary engine has completed the <span class="highlight">${month}</span> tactical draw, and your unique sequences <strong>matched the winning outputs!</strong></p>
   <p class="text">Your tier classification and prize disbursements are now pending verification in your control suite.</p>
   <div style="text-align: center; margin-top: 32px;">
-    <a href="https://golfplatform.com/dashboard" class="btn" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">Claim Winnings</a>
+    <a href="https://golf-charity-frontend-eta.vercel.app/dashboard" class="btn" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">Claim Winnings</a>
   </div>
 `, "WINNER IDENTIFIED: Action Required");
 
@@ -72,7 +72,7 @@ const drawResultsEmail = (name, month) => baseTemplate(`
   <p class="text">The engine sequence for <span class="highlight">${month}</span> has successfully concluded.</p>
   <p class="text">The winning numbers have been compiled and published globally. Log in to your command center to verify your algorithmic alignment and track the updated charity impact metrics.</p>
   <div style="text-align: center; margin-top: 32px;">
-    <a href="https://golfplatform.com/dashboard" class="btn">View Draw Network</a>
+    <a href="https://golf-charity-frontend-eta.vercel.app/dashboard" class="btn">View Draw Network</a>
   </div>
 `, "Official Draw Results Published");
 
