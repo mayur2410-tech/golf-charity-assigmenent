@@ -28,8 +28,8 @@ app.use(morgan("dev"));
 //   })
 // );
 
-app.get("/health", (req, res) => {
-  res.status(200).json({ status: "ok" });
+app.get("/", (req, res) => {
+  res.status(200).json({ status: "backend in running" });
 });
 
 app.use("/api/subscriptions/webhook", express.raw({ type: "application/json" }));
