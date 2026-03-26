@@ -34,7 +34,7 @@
 ### ⚙️ **Backend**
 [![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](#)
 
-[API Server →](https://golf-charity-assigmenent.onrender.com/)
+[API Server →](https://golf-charity-backend-three.vercel.app/)
 
 </td>
 <td align="center" width="25%">
