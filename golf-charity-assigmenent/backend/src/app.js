@@ -5,6 +5,7 @@ const morgan = require("morgan");
 const rateLimit = require("express-rate-limit");
 const path = require("path");
 
+const app = express();
 
 //making changes for vercel
 const connectDB = require("./config/db");
@@ -32,7 +33,6 @@ const { handleWebhook } = require("./controllers/subscriptionController");
 
 const { notFound, errorHandler } = require("./middlewares/errorMiddleware");
 
-const app = express();
 
 app.use(helmet());
 app.use(cors());
