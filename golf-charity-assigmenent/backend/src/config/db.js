@@ -6,8 +6,13 @@ async function connectDB() {
     throw new Error("MONGO_URI is required");
   }
 
-  await mongoose.connect(env.mongoUri);
-  console.log("MongoDB connected");
+  try {
+    await mongoose.connect(env.mongoUri);
+    console.log("✅ MongoDB connected");
+  } catch (err) {
+    console.error("❌ MongoDB connection error:", err);
+    throw err; // VERY IMPORTANT
+  }
 }
 
 module.exports = connectDB;
