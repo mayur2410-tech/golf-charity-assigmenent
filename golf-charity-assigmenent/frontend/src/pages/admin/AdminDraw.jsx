@@ -83,7 +83,7 @@ export default function AdminDraw() {
         <p style={{ color: 'var(--text-secondary)' }}>Create, simulate, and publish monthly prize draws</p>
       </motion.div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 28 }}>
+      <div className="admin-draw-grid">
         {/* Draw controls */}
         <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="glass" style={{ padding: 28 }}>
           <h3 style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, marginBottom: 20 }}>Create Draw</h3>

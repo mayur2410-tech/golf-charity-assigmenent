@@ -31,7 +31,7 @@ export default function AdminOverview() {
 
   return (
     <div style={{ paddingBottom: 60 }}>
-      <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} style={{ marginBottom: 32, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 16 }}>
+      <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="admin-page-header" style={{ marginBottom: 32, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 16 }}>
         <div>
           <h1 style={{ fontFamily: "'Inter', sans-serif", fontSize: '2rem', fontWeight: 600, marginBottom: 8, color: 'white' }}>
             System Analytics

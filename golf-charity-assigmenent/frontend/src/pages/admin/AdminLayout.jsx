@@ -16,9 +16,11 @@ export default function AdminLayout() {
   if (user.role !== 'admin') return <Navigate to="/dashboard" replace />;
 
   return (
-    <div className="page-bg" style={{ display: 'flex' }}>
+    <div className="page-bg dashboard-root">
       <Sidebar />
-      <main className="dashboard-main" style={{ flex: 1, padding: '32px', minHeight: '100vh' }}>
+      {/* Spacer for fixed mobile top bar */}
+      <div className="mobile-topbar-spacer" />
+      <main className="dashboard-main dashboard-content">
         <Outlet />
       </main>
     </div>

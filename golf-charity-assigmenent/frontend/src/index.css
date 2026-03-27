@@ -547,6 +547,24 @@ body {
   flex-direction: column;
 }
 
+/* Admin Draw two-column grid */
+.admin-draw-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+/* Admin Analytics stats row */
+.analytics-stats-row {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding-bottom: 24px;
+}
+
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -587,6 +605,26 @@ body {
   /* Scores grid stacks on mobile */
   .scores-grid {
     grid-template-columns: 1fr !important;
+  }
+
+  /* Admin draw grid stacks on mobile */
+  .admin-draw-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Admin analytics stats scroll on mobile */
+  .analytics-stats-row {
+    gap: 24px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 16px;
+  }
+
+  /* Admin page headers flex wrap on mobile */
+  .admin-page-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
   }
 
   /* Navbar mobile */

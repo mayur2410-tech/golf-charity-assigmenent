@@ -80,7 +80,7 @@ export default function AdminAnalytics() {
       {/* Massive Area Chart Row */}
       <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} className="bento-card" style={{ marginBottom: 24, padding: 32 }}>
          {/* Chart Header Stats */}
-         <div style={{ display: 'flex', gap: 64, marginBottom: 40, borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: 24 }}>
+         <div className="analytics-stats-row">
             <div>
                <div style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginBottom: 6 }}>Gross Volume</div>
                <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
