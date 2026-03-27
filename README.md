@@ -42,7 +42,7 @@
 ### 📖 **API Docs**
 [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](#)
 
-[Documentation →](#)
+[Documentation →](https://documenter.getpostman.com/view/39216846/2sBXikorFa)
 
 </td>
 <td align="center" width="25%">
