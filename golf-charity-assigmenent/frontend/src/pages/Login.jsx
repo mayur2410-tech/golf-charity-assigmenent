@@ -33,7 +33,7 @@ export default function Login() {
   };
 
   return (
-    <div className="page-bg" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
+    <div className="page-bg auth-page-wrapper" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
       <div className="orb orb-blue" style={{ width: 500, height: 500, top: -200, left: -200 }} />
       <div className="orb orb-purple" style={{ width: 400, height: 400, bottom: -150, right: -150 }} />
 
@@ -41,7 +41,7 @@ export default function Login() {
         initial={{ opacity: 0, y: 30, scale: 0.97 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.6, type: 'spring', stiffness: 200 }}
-        className="glass-strong"
+        className="glass-strong auth-card"
         style={{ width: '100%', maxWidth: 440, padding: '48px 40px', position: 'relative', zIndex: 1 }}
       >
         {/* Logo */}

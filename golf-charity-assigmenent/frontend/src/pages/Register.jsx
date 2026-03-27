@@ -37,7 +37,7 @@ export default function Register() {
   };
 
   return (
-    <div className="page-bg" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
+    <div className="page-bg auth-page-wrapper" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
       <div className="orb orb-green" style={{ width: 500, height: 500, top: -200, right: -200 }} />
       <div className="orb orb-purple" style={{ width: 400, height: 400, bottom: -150, left: -150 }} />
 
@@ -45,7 +45,7 @@ export default function Register() {
         initial={{ opacity: 0, y: 30, scale: 0.97 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.6, type: 'spring', stiffness: 200 }}
-        className="glass-strong"
+        className="glass-strong auth-card"
         style={{ width: '100%', maxWidth: 440, padding: '48px 40px', position: 'relative', zIndex: 1 }}
       >
         <div style={{ textAlign: 'center', marginBottom: 36 }}>

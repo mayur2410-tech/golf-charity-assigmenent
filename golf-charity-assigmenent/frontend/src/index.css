@@ -680,7 +680,26 @@ body {
   .pricing-popular-badge {
     font-size: 0.7rem !important;
   }
+
+  /* Auth card responsive on mobile */
+  .auth-page-wrapper {
+    padding: 16px;
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+  .auth-card {
+    padding: 32px 20px !important;
+    border-radius: 20px !important;
+  }
 }
+
+/* ── Auth pages (Login / Register) ── */
+.auth-page-wrapper {
+  padding: 24px;
+  align-items: center;
+}
+
+
 
 @media (max-width: 480px) {
   .hero-section {
@@ -697,5 +716,14 @@ body {
   }
   .cta-box {
     padding: 40px 16px !important;
+  }
+
+  /* Auth card on very small screens */
+  .auth-card {
+    padding: 24px 16px !important;
+  }
+  .auth-page-wrapper {
+    padding: 12px;
+    padding-top: 24px;
   }
 }
