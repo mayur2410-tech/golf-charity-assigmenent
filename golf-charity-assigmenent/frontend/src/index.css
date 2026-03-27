@@ -320,6 +320,18 @@ body {
   z-index: 50;
 }
 
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar-auth {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 /* Modal overlay */
 .modal-overlay {
   position: fixed;
@@ -462,4 +474,76 @@ body {
   .sidebar { transform: translateX(-100%); }
   .sidebar.open { transform: translateX(0); }
   .dashboard-main { margin-left: 0; }
+
+  /* Navbar mobile */
+  .navbar-links { display: none; }
+  .navbar-auth  { display: none; }
+  .hamburger-btn { display: flex !important; }
+
+  /* Hero section */
+  .hero-section {
+    padding: 110px 16px 60px !important;
+  }
+  .hero-section h1 {
+    font-size: clamp(2rem, 8vw, 3rem) !important;
+    letter-spacing: -0.02em;
+  }
+  .hero-section p {
+    font-size: 1rem !important;
+    margin-bottom: 32px !important;
+  }
+
+  /* Sections */
+  .landing-section {
+    padding: 64px 16px !important;
+  }
+  .landing-section-inner {
+    padding: 64px 16px !important;
+    max-width: 100% !important;
+  }
+
+  /* Bento grid on mobile */
+  .bento-grid {
+    gap: 16px;
+  }
+  .bento-card {
+    border-radius: 20px;
+  }
+
+  /* Charities section layout */
+  .charities-grid {
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+  .charities-text {
+    padding-right: 0 !important;
+  }
+
+  /* CTA section */
+  .cta-box {
+    padding: 48px 24px !important;
+  }
+
+  /* Pricing cards */
+  .pricing-popular-badge {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 100px 16px 48px !important;
+  }
+  .hero-section h1 {
+    font-size: clamp(1.75rem, 7vw, 2.5rem) !important;
+  }
+  .bento-grid {
+    gap: 12px;
+  }
+  .bento-card {
+    border-radius: 16px;
+  }
+  .cta-box {
+    padding: 40px 16px !important;
+  }
 }
